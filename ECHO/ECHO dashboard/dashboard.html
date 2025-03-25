@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>energy Sheild</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="main">
+      <div class="sidebar_menu">
+                   <div class="logo">
+                   <h1><i class="fa-solid fa-circle-radiation"></i><a href="#"> Energy sheild </a></h1>
+                </div>
+        
+                <div class="btn_two">
+                  <label for="check">
+                    <i class="fa-solid fa-xmark"></i>
+                  </label>
+                </div>
+        
+                <div class="menu">
+                  <ul>
+                    <li>
+                        <i class="fa-solid fa-shield-halved"></i>
+                      <a href="cyber.html">Cybersecrity</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-cookie-bite"></i>
+                      <a href="threat.html">Threat detection </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars-progress"></i>
+                      <a href="management.html">Mangement</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                      <a href="setting.html">Setting</a>
+                    </li>
+                    
+                    <li>
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="#">Contact</a>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-comments"></i>
+                      <a href="feedback.html">Feedback</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Account Section -->
+                 <div class="account">
+                  <i class="fa-solid fa-user"></i>
+                    <a href="welcome.html">Log out</a>
+                 </div>
+        </div>
+      
+       
+<div class="main-content">
+       <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Removed "MySite" logo text -->
+      
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <!-- Login/Signup Buttons -->
+      
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&#10006;</span> <!-- HTML entity for close symbol -->
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-container">
+          <span class="icon">&#128100;</span> <!-- HTML entity for person icon -->
+          <input type="email" id="loginEmail" placeholder="Email" required>
+        </div>
+        <div class="input-container">
+          <span class="icon">&#128274;</span> <!-- HTML entity for lock icon -->
+          <input type="password" id="loginPassword" placeholder="Password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="openSignup(); closeLogin();">Sign up</a></p>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSignup()">&#10006;</span> <!-- HTML entity for close symbol -->
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <div class="input-container">
+          <span class="icon">&#128100;</span> <!-- HTML entity for person icon -->
+          <input type="text" id="signupName" placeholder="Name" required>
+        </div>
+        <div class="input-container">
+          <span class="icon">&#128231;</span> <!-- HTML entity for email icon -->
+          <input type="email" id="signupEmail" placeholder="Email" required>
+        </div>
+        <div class="input-container">
+          <span class="icon">&#128274;</span> <!-- HTML entity for lock icon -->
+          <input type="password" id="signupPassword" placeholder="Password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>already have an account? Are you sure !<a href="#" onclick="openLogin(); closeSignup();">Login</a></p>
+    </div>
+  </div>
+
+  <div class="qwe">
+    <h1>Our Mission</h1>
+    <p>To safeguard and optimize energy systems worldwide, ensuring reliable, secure, and sustainable energy distribution for communities and industries alike.
+
+    </p>
+  </div>
+<br><br>
+  <!-- Cards Section -->
+  <h1 class="qwe">Key Challenges We Solve
+</h1>
+  <section class="cards-section">
+  <div class="card">
+    <img src="https://static.vecteezy.com/system/resources/previews/022/254/515/non_2x/eco-energy-concept-with-wind-turbine-inside-light-bulb-on-green-background-generative-ai-photo.jpg" alt="Card Image" />
+    <h3>Inefficient Energy Load Balancing</h3>
+    <p>Fluctuations in energy demand can strain the grid, leading to inefficiencies and potential failures. Our dynamic load-balancing solutions leverage predictive analytics to optimize resource allocation in real time.
+
+      Our Solutions at a Gl</p>
+    <!-- <a href="#">Learn More</a> -->
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGoQGpCm3NgbQbuwN5Do_j91oGdFtqTyGlw&s" alt="Card Image" />
+    <h3>Energy Theft</h3>
+    <p>Unauthorized energy usage leads to significant financial losses and operational inefficiencies. With AI models that analyze consumption patterns, we can detect and prevent theft, ensuring fair and lawful energy distribution.</p>
+    <!-- <a href="#">Learn More</a> -->
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQ4czdf5B-04HXU9S8PNUf6Ly5sn54XdbAxD1vtPPYeSbJwTWNLb19CuJpmykkHJv3Kc&usqp=CAU" />
+    <h3>Cybersecurity Threats</h3>
+    <p>Smart grids are vulnerable to cyberattacks, which can compromise critical infrastructure and disrupt energy distribution. Our real-time AI-powered detection and response mechanisms safeguard your energy system against evolving cyber threats.</p>
+    <!-- <a href="#">Learn More</a> -->
+  </div>
+</section>
+<br>
+<h1 class="qwe">Our Solutions at a Glance</h1>
+<section class="cards-section">
+  <div class="card">
+    <img src="https://static.vecteezy.com/system/resources/previews/022/254/515/non_2x/eco-energy-concept-with-wind-turbine-inside-light-bulb-on-green-background-generative-ai-photo.jpg" alt="Card Image" />
+    <h3>Predictive Load Balancing
+      </h3><ul>
+      <li>Harness historical and real-time data to forecast energy demands</li>
+      <li></li>
+      <li>Dynamically allocate resources to prevent overloads and maximize efficiency.</li>
+      <li></li>
+      <li>Enhance sustainability by minimizing energy waste.</li>
+    </ul></p>
+    <!-- <a href="#">Learn More</a> -->
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGoQGpCm3NgbQbuwN5Do_j91oGdFtqTyGlw&s" alt="Card Image" />
+    <h3>Energy Theft Detection</h3>
+    <p><ul>
+      <li>Identify anomalies in energy consumption patterns using machine learning.
+      </li>
+      <li></li>
+      <li>Classify consumer behavior to distinguish between legitimate irregularities and theft.</li>
+      <li></li>
+      <li>Protect revenue and maintain grid integrity.</li>
+    </ul></p>
+    <!-- <a href="#">Learn More</a> -->
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQ4czdf5B-04HXU9S8PNUf6Ly5sn54XdbAxD1vtPPYeSbJwTWNLb19CuJpmykkHJv3Kc&usqp=CAU" />
+    <h3> AI-Driven Cybersecurity</h3>
+    <p><ul>
+      <li>Proactively detect and mitigate cyber threats in real-time.</li>
+      <li></li>
+      <li>Utilize AI for predictive analysis, identifying vulnerabilities before they escalate.</li>
+      <li></li>
+      <li>Ensure uninterrupted energy delivery through advanced security protocols.</li>
+    </ul></p>
+    <!-- <a href="#">Learn More</a> -->
+  </div>
+</section>
+<div class="qwe">
+  <h1>Our Impact</h1>
+  <ul>
+    <p>By integrating advanced AI technology into smart grids, Energy Shield ensures:</p>
+    <li>Real-time threat mitigation for secure operations.
+    </li>
+    <li>Significant reductions in operational losses and energy theft.
+    </li>
+    <li>Optimized energy distribution to support sustainable growth.
+    </li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
+        <div class="music-player">
+          <footer>
+            <div class="footer-container">
+              <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +1 (234) 567-890</p>
+              </div>
+            </div>
+           
+          </footer>
+        </div>
+
+    </div>
+    <script src="dashboard.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+        }
+      }
+    </script>
+</body>
+</html>

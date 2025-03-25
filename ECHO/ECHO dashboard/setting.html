@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>energy Sheild</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+  <div class="settings-container">
+        <header>
+            <h1>Settings Dashboard</h1>
+            <button class="logout-btn">Logout</button>
+        </header>
+
+        <nav class="settings-nav">
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#preferences">Preferences</a></li>
+            </ul>
+        </nav>
+
+        <div class="settings-content">
+            <section id="profile">
+                <h2>Profile Settings</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" value="john_doe">
+                <button class="save-btn">Save</button>
+            </section>
+
+            <section id="notifications">
+                <h2>Notification Settings</h2>
+                <label for="email-notifications">Email Notifications</label>
+                <input type="checkbox" id="email-notifications" checked>
+                <label for="push-notifications">Push Notifications</label>
+                <input type="checkbox" id="push-notifications">
+                <button class="save-btn">Save</button>
+            </section>
+
+            <section id="privacy">
+                <h2>Privacy Settings</h2>
+                <label for="data-sharing">Allow Data Sharing</label>
+                <input type="checkbox" id="data-sharing">
+                <button class="save-btn">Save</button>
+            </section>
+
+            <section id="security">
+                <h2>Security Settings</h2>
+                <label for="change-password">Change Password:</label>
+                <input type="password" id="change-password">
+                <button class="save-btn">Save</button>
+            </section>
+
+            <section id="preferences">
+                <h2>App Preferences</h2>
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <button class="save-btn">Save</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="setting.js"></script>
+</body>
+</html>
+

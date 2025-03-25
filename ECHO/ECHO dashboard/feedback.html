@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>energy Sheild</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+  <div class="feedback-container">
+        <header>
+            <h1>Energy Website Feedback Dashboard</h1>
+            <button class="logout-btn">Logout</button>
+        </header>
+
+        <nav class="feedback-nav">
+            <ul>
+                <li><a href="#cybersecurity">Cybersecurity Feedback</a></li>
+                <li><a href="#threat-detection">Threat Detection Feedback</a></li>
+                <li><a href="#load-balancing">Load Balancing Feedback</a></li>
+                <li><a href="#general-feedback">General Feedback</a></li>
+            </ul>
+        </nav>
+
+        <div class="feedback-content">
+            <!-- Cybersecurity Feedback Section -->
+            <section id="cybersecurity">
+                <h2>Cybersecurity Feedback</h2>
+                <form>
+                    <label for="cybersecurity-exp">How secure do you feel when using our platform?</label>
+                    <select id="cybersecurity-exp">
+                        <option value="very-secure">Very Secure</option>
+                        <option value="secure">Secure</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="insecure">Insecure</option>
+                        <option value="very-insecure">Very Insecure</option>
+                    </select>
+
+                    <label for="cybersecurity-issues">Did you encounter any security issues while using the platform?</label>
+                    <textarea id="cybersecurity-issues" placeholder="Describe any security issues encountered"></textarea>
+
+                    <label for="cybersecurity-improvements">Suggestions for improving cybersecurity?</label>
+                    <textarea id="cybersecurity-improvements" placeholder="Provide your suggestions here"></textarea>
+
+                    <button type="submit" class="save-btn">Submit Feedback</button>
+                </form>
+            </section>
+
+            <!-- Threat Detection Feedback Section -->
+            <section id="threat-detection">
+                <h2>Threat Detection Feedback</h2>
+                <form>
+                    <label for="threat-detection-exp">How would you rate our threat detection system?</label>
+                    <select id="threat-detection-exp">
+                        <option value="very-effective">Very Effective</option>
+                        <option value="effective">Effective</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="ineffective">Ineffective</option>
+                        <option value="very-ineffective">Very Ineffective</option>
+                    </select>
+
+                    <label for="threat-detection-issues">Did you experience any cybersecurity threats or issues?</label>
+                    <textarea id="threat-detection-issues" placeholder="Describe any threats or issues encountered"></textarea>
+
+                    <label for="threat-detection-improvements">Suggestions for improving threat detection:</label>
+                    <textarea id="threat-detection-improvements" placeholder="Provide your suggestions here"></textarea>
+
+                    <button type="submit" class="save-btn">Submit Feedback</button>
+                </form>
+            </section>
+
+            <!-- Load Balancing Feedback Section -->
+            <section id="load-balancing">
+                <h2>Load Balancing Feedback</h2>
+                <form>
+                    <label for="load-balancing-exp">How satisfied are you with the load balancing performance?</label>
+                    <select id="load-balancing-exp">
+                        <option value="very-satisfied">Very Satisfied</option>
+                        <option value="satisfied">Satisfied</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="dissatisfied">Dissatisfied</option>
+                        <option value="very-dissatisfied">Very Dissatisfied</option>
+                    </select>
+
+                    <label for="load-balancing-issues">Did you face any load balancing issues (e.g., downtime, slow response)?</label>
+                    <textarea id="load-balancing-issues" placeholder="Describe any issues encountered"></textarea>
+
+                    <label for="load-balancing-improvements">Suggestions for improving load balancing:</label>
+                    <textarea id="load-balancing-improvements" placeholder="Provide your suggestions here"></textarea>
+
+                    <button type="submit" class="save-btn">Submit Feedback</button>
+                </form>
+            </section>
+
+            <!-- General Feedback Section -->
+            <section id="general-feedback">
+                <h2>General Feedback</h2>
+                <form>
+                    <label for="overall-feedback">Overall Experience:</label>
+                    <select id="overall-feedback">
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="poor">Poor</option>
+                        <option value="very-poor">Very Poor</option>
+                    </select>
+
+                    <label for="general-comments">Any other comments or suggestions?</label>
+                    <textarea id="general-comments" placeholder="Provide any other feedback"></textarea>
+
+                    <button type="submit" class="save-btn">Submit Feedback</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>

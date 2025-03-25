@@ -1,0 +1,228 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ca250f, #7c6161);
+    color: #fff;
+    height: 100vh;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  .ddi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 100px;
+  }
+  .ddii{
+    padding-bottom: 20px;
+  }
+  /* General Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; /* Center the navbar */
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    position: relative;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Colorful gradient */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7); /* Glow effect */
+  }
+  
+  .navbar-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 1); /* More glowing on hover */
+  }
+  
+  .navbar-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .navbar-link:hover::before {
+    opacity: 1;
+  }
+  
+  .navbar-link:active {
+    transform: scale(1.05);
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  }
+
+
+  
+/* Cybersecurity Placeholder Styling */
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Height adjusts based on content */
+    background: linear-gradient(135deg, #ca250f, #7c6161);/* Subtle gradient background */
+    text-align: center;
+    padding: 30px 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners for a modern touch */
+    margin-bottom: 40px; /* Space between placeholder and cards */
+    margin-top: 55px; /* Moves the placeholder down by 50px */
+  }
+  
+  .placeholder-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); /* Slight dark background behind text */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Soft shadow around text box */
+  }
+  
+  /* Cards Section Styling */
+  .card-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    margin-top: -80px;
+  }
+  
+  /* Individual Card Styling */
+  .creative-card {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: #7e2004; /* Light grey background for cards */
+    color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .creative-card:hover {
+    transform: translateY(-10px); /* Card lifts when hovered */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+  }
+  
+  .creative-card:hover .card-image img {
+    transform: scale(1.05); /* Zoom effect on image */
+  }
+  
+  /* Content of Card */
+  .card-content {
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #db9834;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #b95729;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+  }
+  
+  /* Image Container */
+  .card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .creative-card {
+      width: 100%;
+      max-width: 350px;
+    }
+  
+    .card-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
